@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 19, 2021 at 06:34 AM
+-- Generation Time: Oct 19, 2021 at 06:55 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.3.27
 
@@ -32,7 +32,7 @@ CREATE TABLE `tblproduct` (
   `name` varchar(255) NOT NULL,
   `code` varchar(255) NOT NULL,
   `image` text NOT NULL,
-  `price` varchar(11) NOT NULL
+  `price` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -40,10 +40,10 @@ CREATE TABLE `tblproduct` (
 --
 
 INSERT INTO `tblproduct` (`id`, `name`, `code`, `image`, `price`) VALUES
-(1, 'FinePix Pro2 3D Camera', '3DcAM01', 'product-images/camera.jpg', '2.000.000'),
-(2, 'EXP Portable Hard Drive', 'USB02', 'product-images/external-hard-drive.jpg', '100.000'),
-(3, 'Luxury Ultra thin Wrist Watch', 'wristWear03', 'product-images/watch.jpg', '500.000'),
-(4, 'XP 1155 Intel Core Laptop', 'LPN45', 'product-images/laptop.jpg', '5.000.000');
+(1, 'FinePix Pro2 3D Camera', '3DcAM01', 'product-images/camera.jpg', 2000000),
+(2, 'EXP Portable Hard Drive', 'USB02', 'product-images/external-hard-drive.jpg', 100000),
+(3, 'Luxury Ultra thin Wrist Watch', 'wristWear03', 'product-images/watch.jpg', 500000),
+(4, 'XP 1155 Intel Core Laptop', 'LPN45', 'product-images/laptop.jpg', 5000000);
 
 --
 -- Indexes for dumped tables
